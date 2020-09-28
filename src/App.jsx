@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   getRandomColor = event => {
-    const target = event.target
+    // const target = event.target
     var x = Math.floor(Math.random() * 360)
     var y = Math.floor(Math.random() * 100)
     var z = Math.floor(Math.random() * 100)
@@ -78,7 +78,7 @@ class App extends Component {
               />
             </p>
             <h1>
-              Press the button
+              Random color picker
               <input type="button" onClick={this.getRandomColor} />
             </h1>
           </section>
