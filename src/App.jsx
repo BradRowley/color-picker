@@ -25,7 +25,7 @@ class App extends Component {
     }
   }
 
-  getRndInteger = event => {
+  getRandomColor = event => {
     const target = event.target
     var x = Math.floor(Math.random() * 360)
     var y = Math.floor(Math.random() * 100)
@@ -79,7 +79,7 @@ class App extends Component {
             </p>
             <h1>
               Press the button
-              <input type="button" onClick={this.getRndInteger} />
+              <input type="button" onClick={this.getRandomColor} />
             </h1>
           </section>
         </div>
